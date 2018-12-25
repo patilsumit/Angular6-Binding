@@ -1,0 +1,18 @@
+<p>Using Data Binding Changes Follwing Chnage Html with Dom Element</p>
+<p><b>Example of Event Handling: Event Enter key And Set Font Size</b></p>
+<input #userInput (keyup.enter)="myKeyPressFontSize(userInput.value)" placeholder="Font Size">
+
+<input #userInput1 (keyup.enter)="myKeyPressLeftMargin(userInput1.value)" placeholder="Left Margin">
+
+<input #userInput2 (keyup.enter)="myKeyPressTopMargin(userInput2.value)" placeholder="Top Margin">
+
+<p [style.fontSize]="myFontSize" [style.textShadow]="shadow" (dblclick)="myDoubleClick()" [style.marginLeft]="mleft" 
+[style.marginTop]="mtop">Sumit Patil Full Stack Web Developer</p>
+
+<h1 (mouseover)="myMouseOver()" (mousedown)="myMouseDown()"  [style.background]="color">Change Color Mouse Over</h1>
+
+<h1>Pipe Description </h1>
+
+<h2>Indian Currency:    {{demo.sCurrency | currency:'INR'}}</h2>
+<h2>US Currency:  {{demo.sCurrency | currency:'USD'}}</h2>
+<h2>Demo Percentage:  {{demo.sPercentage| percent:'2.2-2'}}</h2>
